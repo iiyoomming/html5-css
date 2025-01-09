@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #f1 {
+        width: 100px;
+      }
+    </style>
+    <style>
+      #f2 {
+        width: 200px;
+      }
+      img.f1 {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://cdn.pixabay.com/photo/2024/11/11/09/47/winter-9189662_1280.jpg"
+      alt="landscape"
+      id="f1"
+    />
+    <img
+      src="https://cdn.pixabay.com/photo/2024/11/11/09/47/winter-9189662_1280.jpg"
+      alt="landscape"
+      id="f2"
+    />
+    <img
+      src="https://cdn.pixabay.com/photo/2024/11/11/09/47/winter-9189662_1280.jpg"
+      alt="landscape"
+      id="f1"
+    />
+    <picture>
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          https://cdn.pixabay.com/photo/2017/08/07/22/23/man-2608550_1280.jpg
+        "
+      />
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          https://cdn.pixabay.com/photo/2023/01/10/18/07/island-7710290_960_720.jpg
+        "
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          https://cdn.pixabay.com/photo/2014/11/13/23/34/coast-530057_1280.jpg
+        "
+      />
+      <source
+        media="(min-width:500px)"
+        srcset="
+          https://cdn.pixabay.com/photo/2015/11/25/09/42/rocks-1061540_1280.jpg
+        "
+      />
+      <img
+        src="https://cdn.pixabay.com/photo/2017/06/26/15/00/beach-2444040_1280.jpg"
+        alt="ocean"
+      />
+    </picture>
+  </body>
+</html>
