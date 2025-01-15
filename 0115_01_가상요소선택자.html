@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1:first-child {
+      color: thistle;
+    }
+    h1:last-of-type {
+      color: teal;
+    }
+    /* p:nth-child(3)*/
+    p:first-of-type {
+      color: tan;
+    }
+    p:nth-of-type(2) {
+      color: slateblue;
+    }
+    h1::first-letter {
+      color: silver;
+    }
+    ::first-line {
+      color: salmon;
+    }
+    h1::before {
+      content: "가상요소앞";
+    }
+    h1::after {
+      content: "가상요소뒤";
+    }
+    p::before {
+      content: url(./images/photo1.jpg);
+    }
+    :not(a) {
+      color: peachpuff;
+    }
+  </style>
+  <body>
+    <h1>Lorem ipsum</h1>
+    <h1>Lorem ipsum</h1>
+
+    <p>
+      dolor sit amet, consectetur adipiscing elit. Sed volutpat ornare tellus
+      vitae molestie. Integer consectetur odio ut mauris bibendum, efficitur
+      varius lectus aliquam. Fusce vitae leo eget augue vehicula dictum.
+      Vestibulum lorem leo, placerat non diam ut, elementum posuere purus.
+      Quisque eget tellus blandit, consequat urna elementum, rhoncus est. Donec
+      tristique libero quis felis interdum eleifend. Praesent tempor elementum
+      leo vitae egestas.
+    </p>
+    <p>
+      Aliquam feugiat, velit ut condimentum scelerisque, lectus dui tincidunt
+      risus, tempor euismod ipsum ex tincidunt augue. Cras egestas laoreet orci,
+      nec pretium purus viverra et. Class aptent taciti sociosqu ad litora
+      torquent per conubia nostra, per inceptos himenaeos. Donec sit amet nisi
+      id nibh aliquet ultrices vitae vel nulla. Morbi fringilla ornare felis, eu
+      consectetur odio ullamcorper interdum.
+    </p>
+    <p>
+      Suspendisse bibendum scelerisque risus, mattis porttitor neque. Vivamus
+      rutrum molestie eros, vel ultricies lectus vehicula rutrum. Praesent
+      vehicula dui odio, non sagittis eros molestie sit amet. Nam egestas in
+      tortor id vehicula. Nulla facilisi. Pellentesque rhoncus sagittis tellus,
+      eget facilisis ipsum laoreet quis. Quisque aliquet nisl facilisis lorem
+      cursus, sed blandit dui pulvinar. Suspendisse et varius sem, quis aliquam
+      nisl. Nunc sagittis pretium ornare.
+    </p>
+
+    <h1>Lorem ipsum</h1>
+    <p>
+      <a href="">링크태그</a>
+      <a href="">링크태그</a>
+      <span>인라인</span>
+      <span>인라인</span>
+    </p>
+  </body>
+</html>

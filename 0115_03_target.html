@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      display: none;
+    }
+    #new:target,
+    #notice:target {
+      display: inline;
+    }
+    ::selection {
+      background-color: thistle;
+    }
+  </style>
+  <body>
+    <a href="#new">link</a>
+    <p id="new">paragraph</p>
+    <a href="#notice">notice</a>
+    <p id="notice">hello!</p>
+  </body>
+</html>
