@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="극동건설" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        width: 200px;
+        height: 200px;
+        border-width: 20px;
+        border-style: solid;
+        padding: 100px;
+        border-color: rgba(0, 0, 0, 0.3);
+      }
+      .origin p {
+        background-image: url(./images/photo1.jpg);
+        background-repeat: no-repeat;
+      }
+      .origin p:first-child {
+        background-origin: border-box;
+      }
+      .origin p:nth-child(2) {
+        background-origin: padding-box;
+      }
+      .origin p:nth-child(3) {
+        background-origin: content-box;
+      }
+      .clip p {
+        background-color: crimson;
+      }
+      .clip p:first-child {
+        background-clip: border-box;
+      }
+      .clip p:nth-child(2) {
+        background-clip: padding-box;
+      }
+      .clip p:nth-child(3) {
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="origin">
+      <p>border-box</p>
+      <p>padding-box</p>
+      <p>content-box</p>
+    </div>
+    <div class="clip">
+      <p>border-box</p>
+      <p>padding-box</p>
+      <p>content-box</p>
+    </div>
+  </body>
+</html>
