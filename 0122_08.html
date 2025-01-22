@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #d3222a;
+      }
+      .whole {
+        width: 956px;
+        height: 688px;
+        margin: 0px auto;
+        position: relative;
+      }
+      .index {
+        background: url(./images/pattern.gif) 0 28px no-repeat;
+      }
+      index p:nth-child(1) {
+        left: 500px;
+        position: absolute;
+      }
+      .main p:nth-child(1) {
+        top: 110px;
+        position: absolute;
+      }
+      .main p:nth-child(2) {
+        left: 500px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole">
+      <div class="top">
+        <p><img src="./images/index_top.gif" alt="index_top" /></p>
+        <p><img src="./images/index_pattern.gif" alt="index_pattern" /></p>
+      </div>
+      <div class="main">
+        <p><img src="./images/index_main_01.gif" alt="index_main_01" /></p>
+        <p><img src="./images/index_main_02.gif" alt="index_main_02" /></p>
+      </div>
+      <div class="foot">
+        <p><img src="./images/copyright.gif" alt="copyright" /></p>
+      </div>
+    </div>
+  </body>
+</html>
