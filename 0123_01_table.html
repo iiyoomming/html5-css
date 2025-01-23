@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      table {
+        /* border: 1px solid red; */
+        border-collapse: collapse;
+      }
+
+      /* tr {
+        border: 1px solid green;
+      } */
+
+      th,
+      td {
+        border: 1px solid blue;
+        padding: 20px;
+      }
+      table:nth-child(2) {
+        width: 500px;
+      }
+      table:nth-child(2) th,
+      table:nth-child(2) td {
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>셀11</th>
+          <th>셀12</th>
+          <th>셀13</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th>셀21</th>
+          <th>셀22</th>
+          <th>셀23</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th>셀31</th>
+          <th>셀32</th>
+          <th>셀33</th>
+        </tr>
+      </thead>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>셀11</th>
+          <th>셀12</th>
+          <th>셀13</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th>셀21</th>
+          <th>셀22</th>
+          <th>셀23</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th>셀31</th>
+          <th>셀32</th>
+          <th>셀33</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
