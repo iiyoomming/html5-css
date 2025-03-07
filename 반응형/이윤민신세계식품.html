@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .con {
+        width: 100%;
+      }
+      .con .txt {
+        text-align: center;
+        word-break: keep-all;
+      }
+      .con .txt h2 {
+        font-size: 40px;
+        color: #000;
+        line-height: 1.25;
+        position: relative;
+        padding-bottom: 49px;
+        position: relative;
+      }
+      .con .txt h2::after {
+        content: "";
+        width: 121px;
+        height: 4px;
+        background: #000;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+      }
+      .con .txt p {
+        font-size: 22px;
+        color: #444;
+        line-height: 1.8;
+      }
+      .con .pic {
+        width: 100%;
+        max-width: 1280px;
+        margin: 20px auto;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .con .pic li {
+        width: calc((100% - 20px) / 2);
+      }
+      .con .pic li img {
+        border-radius: 20px;
+        width: 100%;
+      }
+      @media screen and (max-width: 500px) {
+        .con .txt h2 {
+          font-size: 20px;
+        }
+        .con .txt h2::after {
+          display: none;
+        }
+        .con .txt p {
+          font-size: 15px;
+        }
+        br {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="txt">
+        <h2>생활 속에서 함께하는 <br />식품 제조 선도 기업</h2>
+
+        <p>
+          신세계푸드는 글로벌 수준의 R&amp;D센터와 식품 제조 인프라를 갖추고
+          있습니다. <br />프리미엄 가정 간편식, 베이커리, Fresh Food, 대안식품
+          등을 <br />직접 연구개발 및 생산하며 식품시장을 선도해 가고 있습니다.
+        </p>
+      </div>
+      <ul class="pic">
+        <li>
+          <p><img src="./shinsegaefood/1.jpg" alt="food1" /></p>
+        </li>
+        <li>
+          <p><img src="./shinsegaefood/2.jpg" alt="food2" /></p>
+        </li>
+        <li>
+          <p><img src="./shinsegaefood/3.jpg" alt="food3" /></p>
+        </li>
+        <li>
+          <p><img src="./shinsegaefood/4.jpg" alt="food4" /></p>
+        </li>
+        <li>
+          <p><img src="./shinsegaefood/5.jpg" alt="food5" /></p>
+        </li>
+        <li>
+          <p><img src="./shinsegaefood/6.jpg" alt="food6" /></p>
+        </li>
+        <li>
+          <p><img src="./shinsegaefood/7.jpg" alt="food7" /></p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

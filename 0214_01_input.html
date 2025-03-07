@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #menu {
+        display: none;
+      }
+      #menu:checked ~ p.down {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="up">클릭이벤트</p>
+    <input type="checkbox" name="" id="menu" />
+    <label for="menu">이미지보이기 / 숨기기</label>
+    <p class="down"><img src="./images/photo1.jpg" alt="" /></p>
+  </body>
+</html>

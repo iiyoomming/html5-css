@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .pro {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+      }
+      .pro .top {
+        text-align: center;
+      }
+      .pro .con p:first-child {
+        position: relative;
+      }
+      .pro .con p:nth-child(2) {
+        position: absolute;
+        top: 160px;
+      }
+      .pro .txt {
+        text-align: center;
+      }
+      .pro .bottom label {
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pro">
+      <div class="top">
+        <input type="radio" name="circle" id="one" />
+        <input type="radio" name="circle" id="two" />
+        <input type="radio" name="circle" id="three" />
+      </div>
+      <div class="con">
+        <p><img src="./images/propeller.png" alt="propeller" /></p>
+        <p><img src="./images/pipe.png" alt="" /></p>
+      </div>
+      <div class="bottom">
+        <label for="one">turn left</label>
+        <label for="two">turn right</label>
+        <label for="three">off</label>
+      </div>
+    </div>
+  </body>
+</html>

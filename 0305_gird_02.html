@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body > div {
+        width: 500px;
+        height: 500px;
+        border: 1px solid;
+        margin: 20px;
+      }
+      p {
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        text-align: center;
+        /* line-height: 200px; */
+      }
+      .con1 {
+        position: relative;
+      }
+      .con1 p,
+      .con1 p span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .con2,
+      .con2 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .con3,
+      .con3 p {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }
+      .con4 {
+        height: 100px;
+        display: grid;
+        /* justify-content: center; */
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .con4 a {
+        display: block;
+        width: 200px;
+        border: 1px solid;
+      }
+      article {
+        display: grid;
+        /* justify-items: center; */
+        justify-content: center;
+      }
+      article a {
+        /* width: 200px; */
+        border: 1px solid;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con1">
+      <p>
+        <span>position <br />123123123123123</span>
+      </p>
+    </div>
+    <div class="con2">
+      <p>flex<br />123123123123123</p>
+    </div>
+    <div class="con3">
+      <p>grid<br />123123123123123</p>
+    </div>
+    <section class="con4">
+      <a href="#"
+        >grid <br />123123123123123<br />123123123123123<br />123123123123123</a
+      >
+      <a href="#">grid <br />123123123123123</a>
+      <a href="#">grid <br />123123123123123</a>
+    </section>
+    <article>
+      <a href="#">123456789</a>
+      <a href="#">123456</a>
+      <a href="#">1234</a>
+      <a href="#">12</a>
+    </article>
+  </body>
+</html>

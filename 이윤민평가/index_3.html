@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul.last {
+        width: 1080px;
+        height: 893px;
+        margin: 0 auto;
+        display: flex;
+      }
+      ul.last li {
+        padding: 0 20px;
+        width: 270px;
+        height: 363px;
+        text-align: center;
+        position: relative;
+      }
+      ul.last li div {
+        word-break: keep-all;
+      }
+      ul.last li div.txt h3 {
+        font-size: 24px;
+        padding: 0 0 30px 0;
+        text-align: center;
+      }
+      ul.last li div.txt p {
+        text-align: center;
+        font-size: 18px;
+      }
+      ul.last li::after {
+        content: "";
+        width: 1px;
+        height: 170px;
+        background: #ccc;
+        position: absolute;
+        left: 0;
+        top: 130px;
+      }
+      ul.last li:nth-child(1)::after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="last">
+      <li>
+        <p><img src="./img/special_mbnf_1_obj.png" alt="" /></p>
+        <div class="txt">
+          <h3>해외이용의 정석</h3>
+          <p>여행, 직구, 항공</p>
+          <p>무엇이든 우리카드로</p>
+        </div>
+      </li>
+      <li>
+        <p><img src="./img/special_mbnf_2_obj.png" alt="" /></p>
+        <div class="txt">
+          <h3>MY PICK 서비스</h3>
+          <p>혜택도 맞춤!</p>
+          <p>나만을 위한 맞춤 혜택</p>
+        </div>
+      </li>
+      <li>
+        <p><img src="./img/special_mbnf_3_obj.png" alt="" /></p>
+        <div class="txt">
+          <h3>우리V클럽</h3>
+          <p>특별한을 원하는</p>
+          <p>고객을 위한 VIP우대 혜택</p>
+        </div>
+      </li>
+      <li>
+        <p><img src="./img/special_mbnf_4_obj.png" alt="" /></p>
+        <div class="txt">
+          <h3>우리 Point</h3>
+          <p>차곡차곡 쌓아</p>
+          <p>다양한 곳에서 사용가능</p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        display: none;
+      }
+      .top {
+        width: 1903px;
+        height: 700px;
+        background: url(https://www.doosanrobotics.com/images/sub/sub-bg13.jpg);
+        border: 1px solid;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .top .menu1 {
+        background: #ccc;
+        opacity: 0.8;
+        border-radius: 20px;
+        width: 440px;
+        height: 60px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .top .menu2,
+      .top .menu3 {
+        width: 220px;
+        background: #fff;
+        display: none;
+        margin: 0 auto;
+      }
+      #dusan1:checked ~ .top .menu2,
+      #dusan2:checked ~ .top .menu3 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="dusan" id="dusan1" />
+    <input type="radio" name="dusan" id="dusan2" />
+    <div class="top">
+      <div class="menu1">
+        <p>
+          <img
+            src="https://www.doosanrobotics.com/images/icon-home.svg"
+            alt=""
+          />
+        </p>
+        <label for="dusan1">교육&서비스</label>
+        <label for="dusan2">두산 로봇 교육</label>
+      </div>
+      <div class="menu2">
+        <p>제품&솔루션</p>
+        <p>교육&서비스</p>
+        <p>투자정보</p>
+        <p>회사소개</p>
+      </div>
+      <div class="menu3">
+        <p>두산 로봇 교육</p>
+        <p>다운로드 센터</p>
+        <p>a/s 신청</p>
+        <p>파트너 서비스↗</p>
+      </div>
+    </div>
+  </body>
+</html>

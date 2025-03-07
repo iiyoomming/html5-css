@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul.con {
+        width: 1080px;
+        height: 150px;
+        margin: 0 auto;
+        display: flex;
+        background: #e2fdfe;
+      }
+      ul.con li {
+        width: calc(100% / 6);
+        height: 100%;
+        padding-top: 30px;
+        word-break: keep-all;
+        position: relative;
+      }
+
+      ul.con li::after {
+        content: "";
+        width: 2px;
+        height: 100px;
+        background: #e1efef;
+        position: absolute;
+        left: 0;
+        top: 20px;
+      }
+      ul.con li:nth-child(1)::after {
+        display: none;
+      }
+      ul.con li p:nth-child(1) {
+        text-align: center;
+      }
+
+      ul.con li p:nth-child(2) {
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="con">
+      <li>
+        <p><img src="./img/ico_quick_menu1.png" alt="menu1" /></p>
+        <p>이용대금명세서</p>
+      </li>
+      <li>
+        <p><img src="./img/ico_quick_menu2.png" alt="menu2" /></p>
+        <p>결제예상금액</p>
+      </li>
+      <li>
+        <p><img src="./img/ico_quick_menu3.png" alt="menu3" /></p>
+        <p>이용내역조회</p>
+      </li>
+      <li>
+        <p><img src="./img/ico_quick_menu4.png" alt="menu4" /></p>
+        <p>내정보변경</p>
+      </li>
+      <li>
+        <p><img src="./img/ico_quick_menu5.png" alt="menu5" /></p>
+        <p>카드분실신고</p>
+      </li>
+      <li>
+        <p><img src="./img/ico_quick_menu6.png" alt="menu6" /></p>
+        <p>카드사용등록</p>
+      </li>
+    </ul>
+  </body>
+</html>

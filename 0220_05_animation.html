@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .ani {
+        text-align: center;
+      }
+
+      .ani p {
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border: 10px solid #333;
+        border-right: none;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="btn" id="start" />
+    <input type="radio" name="btn" id="stop" />
+    <div class="ani">
+      <div class="tri">
+        <p></p>
+      </div>
+      <div class="btn">
+        <label for="start">start</label>
+        <label for="stop">stop</label>
+      </div>
+    </div>
+  </body>
+</html>

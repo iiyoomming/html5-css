@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        display: none;
+      }
+      .han {
+        margin: 0 auto;
+        text-align: center;
+        /* border: 1px solid; */
+        width: 1220px;
+      }
+      .han .menu {
+        /* border: 1px solid; */
+        padding: 14px 8px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+      }
+
+      .han .menu label {
+        cursor: pointer;
+      }
+      .han .con {
+        justify-content: center;
+        /* border: 1px solid; */
+        position: relative;
+      }
+      .han .con p {
+        position: absolute;
+      }
+      .han .con p img {
+        width: 100%;
+        display: none;
+      }
+      #industry1:checked ~ .han .menu:first-child,
+      #industry2:checked ~ .han .menu:nth-child(2),
+      #industry3:checked ~ .han .menu:nth-child(3),
+      #industry4:checked ~ .han .menu:nth-child(4),
+      #industry5:checked ~ .han .menu:nth-child(5),
+      #industry6:checked ~ .han .menu:nth-child(6) {
+        opacity: 1;
+      }
+      #industry1:checked ~ .han .con p:first-child img,
+      #industry2:checked ~ .han .con p:nth-child(2) img,
+      #industry3:checked ~ .han .con p:nth-child(3) img,
+      #industry4:checked ~ .han .con p:nth-child(4) img,
+      #industry5:checked ~ .han .con p:nth-child(5) img,
+      #industry6:checked ~ .han .con p:nth-child(6) img {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="industry" id="industry1" checked />
+    <input type="radio" name="industry" id="industry2" />
+    <input type="radio" name="industry" id="industry3" />
+    <input type="radio" name="industry" id="industry4" />
+    <input type="radio" name="industry" id="industry5" />
+    <input type="radio" name="industry" id="industry6" />
+    <div class="han">
+      <div class="menu">
+        <label for="industry1">반도체</label>
+        <label for="industry2">전기/전자</label>
+        <label for="industry3">2차 전지</label>
+        <label for="industry4">식음료/제약</label>
+        <label for="industry5">화학</label>
+        <label for="industry6">기계/금속</label>
+      </div>
+      <div class="con">
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-01.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-02.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-03.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-04.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-05.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.hansolpns.com/assets/resources/front/images/contents/smart_factory/industry-06.jpg"
+            alt=""
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

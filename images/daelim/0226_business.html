@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        display: none;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .title {
+        width: 1380px;
+        margin: 50px auto 0;
+        text-align: center;
+      }
+      .title h1 {
+        font-size: 46px;
+        font-weight: normal;
+      }
+      .title p {
+        font-size: 16px;
+        padding-top: 20px;
+      }
+
+      .con {
+        width: 1904px;
+        margin: 50px auto 0;
+      }
+      .con ul {
+        position: relative;
+        height: 300px;
+      }
+      .con ul li {
+        position: absolute;
+        width: 1904px;
+        height: 300px;
+        background-position: center;
+        opacity: 0;
+        transition: 1s;
+      }
+      .con ul li:nth-child(1) {
+        background-image: url(./business_daelim2.png), url(./business01.png);
+      }
+      .con ul li:nth-child(2) {
+        background-image: url(./business_daelim2.png), url(./business02.png);
+      }
+      .con ul li:nth-child(3) {
+        background-image: url(./business_daelim2.png), url(./business03.png);
+      }
+      .con ul li:nth-child(4) {
+        background-image: url(./business_daelim2.png), url(./business04.png);
+      }
+      .con ul li:nth-child(5) {
+        background-image: url(./business_daelim2.png), url(./business05.png);
+      }
+      .con ul li:nth-child(6) {
+        background-image: url(./business_daelim2.png), url(./business06.png);
+      }
+      .con ul li:nth-child(7) {
+        background-image: url(./business_daelim2.png), url(./business07.png);
+      }
+
+      .con ul li img {
+        position: absolute;
+        left: 1002px;
+        top: -194px;
+      }
+      #menu1:checked ~ .con ul li:nth-child(1),
+      #menu2:checked ~ .con ul li:nth-child(2),
+      #menu3:checked ~ .con ul li:nth-child(3),
+      #menu4:checked ~ .con ul li:nth-child(4),
+      #menu5:checked ~ .con ul li:nth-child(5),
+      #menu6:checked ~ .con ul li:nth-child(6),
+      #menu7:checked ~ .con ul li:nth-child(7) {
+        opacity: 1;
+      }
+      .menu {
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .menu label {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        width: 180px;
+        border: 1px solid #b5b5b5;
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 10px 0 10px 0;
+        text-wrap: nowrap;
+      }
+      .menu label:hover {
+        background: #1b2e59;
+        border: 1px solid #1b2e59;
+        color: #fff;
+      }
+      #menu1:checked ~ .menu label:nth-child(1),
+      #menu2:checked ~ .menu label:nth-child(2),
+      #menu3:checked ~ .menu label:nth-child(3),
+      #menu4:checked ~ .menu label:nth-child(4),
+      #menu5:checked ~ .menu label:nth-child(5),
+      #menu6:checked ~ .menu label:nth-child(6),
+      #menu7:checked ~ .menu label:nth-child(7) {
+        background: #1b2e59;
+        border: 1px solid #1b2e59;
+        color: #fff;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="btn" id="menu1" checked />
+    <input type="radio" name="btn" id="menu2" />
+    <input type="radio" name="btn" id="menu3" />
+    <input type="radio" name="btn" id="menu4" />
+    <input type="radio" name="btn" id="menu5" />
+    <input type="radio" name="btn" id="menu6" />
+    <input type="radio" name="btn" id="menu7" />
+    <div class="title">
+      <h1>Business Area</h1>
+      <p>㈜대림은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.</p>
+    </div>
+    <div class="con">
+      <ul>
+        <li><img src="./business_img01.png" alt="" /></li>
+        <li><img src="./business_img02.png" alt="" /></li>
+        <li><img src="./business_img03.png" alt="" /></li>
+        <li><img src="./business_img04.png" alt="" /></li>
+        <li><img src="./business_img05.png" alt="" /></li>
+        <li><img src="./business_img06.png" alt="" /></li>
+        <li><img src="./business_img07.png" alt="" /></li>
+      </ul>
+    </div>
+    <div class="menu">
+      <label for="menu1">트레이딩</label>
+      <label for="menu2">PI </label>
+      <label for="menu3">물류</label>
+      <label for="menu4">탱크컨테이너</label>
+      <label for="menu5">건설정보화</label>
+      <label for="menu6">IT서비스 </label>
+      <label for="menu7">투자</label>
+    </div>
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      :focus {
+        outline: none;
+      }
+      input[type="search"] {
+        width: 200px;
+        padding: 12px 20px 12px 40px;
+        border-radius: 50px;
+        border: 2px solid #ccc;
+        background-image: url(./images/searchicon.png);
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+      }
+
+      input[type="search"]:hover {
+        border-color: transparent;
+      }
+      img {
+        width: 300px;
+      }
+      .google input[type="search"] {
+        width: 750px;
+        background-image: url(./images/cam.svg), url(./images/mic.svg),
+          url(./images/key.png);
+        background-position: 98% 0, 90% 5px, 83% 10px;
+        background-size: 40px, 20px, 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="">
+      <input type="search" placeholder="search..." onfocus="this.placeholer" />
+      <p class="google">
+        <input
+          type="search"
+          placeholder="search..."
+          onfocus="this.placeholer"
+        />
+      </p>
+    </form>
+  </body>
+</html>

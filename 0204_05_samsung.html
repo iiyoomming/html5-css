@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul.sam {
+        width: 1720px;
+        height: 630px;
+        margin: 50px auto;
+        display: flex;
+      }
+      ul.sam li {
+        width: 344px;
+        transition: 0.5s;
+        justify-content: center;
+      }
+      ul.sam li:hover {
+        width: 688px;
+      }
+      ul.sam li div {
+        text-align: left;
+        color: #fff;
+        padding-top: 20%;
+        padding-left: 10%;
+      }
+     
+      ul.sam li div p:first-child {
+        font-size: 35px;
+        font-weight: bolder;
+      }
+      ul.sam li div p:nth-child(2) {
+        font-size: 20px;
+      }
+      
+      ul.sam li:hover div {
+        padding-top: 30%;
+      }
+      ul.sam li:hover div p:first-child {
+        font-size: 50px;
+      }
+      ul.sam:hover li:not(:hover){
+        width:344px ;
+        
+      }
+      
+      ul.sam li:first-child {
+        width: 688px;
+        border-radius: 20px 0 0 20px;
+        background: url(https://www.samsungshi.com/images/main/mSolution_bg_01.jpg);
+      }
+      ul.sam li:nth-child(2) {
+        background: url(https://www.samsungshi.com/images/main/mSolution_bg_02.jpg);
+      }
+      ul.sam li:nth-child(3) {
+        background: url(https://www.samsungshi.com/images/main/mSolution_bg_03.jpg);
+      }
+      ul.sam li:nth-child(4) {
+        border-radius: 0 20px 20px 0;
+        background: url(https://www.samsungshi.com/images/main/mSolution_bg_04.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="sam">
+      <li>
+        <div class="txt">
+          <p ">제품 | 서비스</p>
+          <p>끊임없는 제품 혁신과 엔지니어링 역량 강화</p>
+          <p>자세히</p>
+        </div>
+      </li>
+      <li>
+        <div class="txt">
+          <p>그린 솔루션</p>
+          <p>지구를 위한 조선·해양 탄소중립 기술 개발</p>
+          <p>자세히</p>
+        </div>
+      </li>
+      <li>
+        <div class="txt">
+          <p>디지털 솔루션</p>
+          <p>미래 디지털 기술 시장 선도</p>
+          <p>자세히</p>
+        </div>
+      </li>
+      <li>
+        <div class="txt">
+          <p>스마트야드 솔루션</p>
+          <p>미래형 조선소로 패러다임 전환</p>
+          <p>자세히</p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

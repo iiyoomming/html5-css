@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .grid-container {
+        display: grid;
+       height: 100vh;
+        grid-template-columns:200px 400px auto
+        grid-template-areas:"left middle right" "footlogo footmenu footmenu"
+        "footlogo copyright copyright"
+        grid-template-rows: auto 60px 60px;
+      }
+      .grid-item {
+        background: #ddd;
+      }
+      .left{
+        grid-area: left;
+        background: #aaa;
+      }
+      .menu1 {
+        grid-area: nav;
+        background: #bbb;
+      }
+      .slide {
+        grid-area: slide;
+        background: #ccc;
+      }
+      .notice {
+        grid-area: notice;
+        background: #ddd;
+      }
+      .banner {
+        grid-area: banner;
+        background: #eee;
+      }
+      .go {
+        grid-area: go;
+        background: #aaa;
+      }
+      .footlogo {
+        grid-area: footlogo;
+        background: #bbb;
+      }
+      .footmenu {
+        grid-area: footmenu;
+        background: #ddd;
+      }
+      .copyright {
+        grid-area: copyright;
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="left">left</div>
+      <div class="middle">middle</div>
+      <div class="right">right</div>
+      <div class="toplogo">logo</div>
+      <div class="footlogo">logo</div>
+      <div class="footmenu">footmenu</div>
+      <div class="copyright">copyright</div>
+    </div>
+  </body>
+</html>

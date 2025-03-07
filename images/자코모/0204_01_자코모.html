@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul.jakomo {
+        width: 1763px;
+        height: 799px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul.jakomo li {
+        width: 575px;
+        height: 575px;
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        text-align: center;
+        color: #969025;
+        background: #f2f1e7;
+      }
+      ul.jakomo li div p img {
+        width: 149px;
+      }
+      ul.jakomo li div p:nth-child(2) {
+        font-size: 38px;
+        font-weight: bolder;
+      }
+      ul.jakomo li div p:nth-child(3) {
+        font-size: 16px;
+        word-break: keep-all;
+        padding: 0 110px;
+      }
+
+      ul.jakomo li:first-child:hover {
+        background: url(./images/img_card01.jpg) center/cover;
+      }
+      ul.jakomo li:nth-child(2):hover {
+        background: url(./images/img_card02.jpg) center/cover;
+      }
+      ul.jakomo li:nth-child(3):hover {
+        background: url(./images/img_card03.jpg) center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="jakomo">
+      <li>
+        <div>
+          <p><img src="./images/img_card_ico01.svg" alt="ico01" /></p>
+          <p>Environment</p>
+          <p>
+            환경경영과 안전·보건 경영을 통해 기업의 건강 사회의 건강, 그리고
+            지구의 건강을 지킵니다.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p><img src="./images/img_card_ico02.svg" alt="ico02" /></p>
+          <p>Social</p>
+          <p>
+            사회의 일원으로서 고객, 임직원, 지역사회에 대한 사회적 책임을
+            다합니다.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p><img src="./images/img_card_ico03.svg" alt="ico03" /></p>
+          <p>Governance</p>
+          <p>
+            책임경영과 윤리경영을 통해 주주 및 이해관계자의 권익 보호에 최선을
+            다합니다.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
