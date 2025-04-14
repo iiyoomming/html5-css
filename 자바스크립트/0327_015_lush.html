@@ -1,0 +1,69 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .lush {
+        margin-top: 176px;
+        width: 100%;
+        height: 720px;
+        background-color: #fafafa;
+        display: flex;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .lush .con {
+        margin: auto;
+
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 94px 177px;
+      }
+      .lush .con li {
+        width: 180px;
+        height: 180px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #222;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lush">
+      <ul class="con">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script>
+      document.querySelectorAll(".con li").forEach(function (v, k) {
+        v.style.backgroundImage =
+          "url(https://weare.lush.co.kr/images/ico_main_value0" +
+          (k + 1) +
+          ".svg)";
+      });
+      document.querySelectorAll(".lush").forEach(function (v, k) {
+        v.style.backgroundImage =
+          "url(https://weare.lush.co.kr/images/main_value0" + (k + 1) + ".jpg)";
+      });
+    </script>
+  </body>
+</html>

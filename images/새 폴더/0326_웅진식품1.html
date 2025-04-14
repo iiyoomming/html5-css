@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      input {
+        display: none;
+      }
+      .brand {
+        width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .brand .menu {
+        margin: 50px 0;
+      }
+      .brand .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .brand .menu ul li {
+        padding: 0 20px;
+        position: relative;
+      }
+      .brand .menu ul li a {
+        color: #000;
+        position: relative;
+      }
+      .brand .menu ul li a.active {
+        color: green;
+      }
+      .brand .con {
+        position: relative;
+        height: 218px;
+      }
+      .brand .con ul {
+        display: none;
+        gap: 47px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        justify-content: center;
+      }
+      .brand .con ul.active {
+        display: flex;
+      }
+      .brand .con ul li {
+        width: 218px;
+        height: 218px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .brand .con ul li img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .brand .menu ul li a.active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 3px;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="brand">
+      <h1>웅진 브랜드</h1>
+      <p>맛있고 건강한 웅진식품 대표 브랜드를 확인해보세요.</p>
+      <div class="menu">
+        <ul>
+          <li><a href="#">주스</a></li>
+          <li><a href="#">차</a></li>
+          <li><a href="#">곡물</a></li>
+          <li><a href="#">어린이</a></li>
+          <li><a href="#">생수/탄산/이온</a></li>
+          <li><a href="#">홍삼/건강/드링크</a></li>
+          <li><a href="#">제과</a></li>
+          <li><a href="#">해외수입제품</a></li>
+        </ul>
+      </div>
+      <div class="con">
+        <ul>
+          <li>
+            <p><img src="./images/a01.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/a02.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/a03.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/a04.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/a05.png" alt="" /></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><img src="./images/b01.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/b02.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/b03.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/b04.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/b05.png" alt="" /></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><img src="./images/c01.png" alt="" /></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><img src="./images/d01.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/d02.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/d03.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/d04.png" alt="" /></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><img src="./images/e01.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/e02.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/e03.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/e04.png" alt="" /></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><img src="./images/f01.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/f02.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/f03.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/f04.png" alt="" /></p>
+          </li>
+          <li>
+            <p><img src="./images/f05.png" alt="" /></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><img src="./images/g01.png" alt="" /></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><img src="./images/h01.png" alt="" /></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".brand .con ul")[0].classList.add("active");
+      document
+        .querySelectorAll(".brand .menu ul li")[0]
+        .querySelector("a")
+        .classList.add("active");
+
+      function myremove() {
+        document.querySelectorAll(".brand .con ul").forEach(function (v, k) {
+          v.classList.remove("active");
+        });
+
+        document
+          .querySelectorAll(".brand .menu ul li")
+          .forEach(function (v, k) {
+            v.querySelector("a").classList.remove("active");
+          });
+      }
+
+      document.querySelectorAll(".brand .menu ul li").forEach(function (v, k) {
+        v.onclick = function () {
+          myremove();
+          document
+            .querySelectorAll(".brand .con ul")
+            [k].classList.add("active");
+          document
+            .querySelectorAll(".brand .menu ul li")
+            [k].querySelector("a")
+            .classList.add("active");
+        };
+      });
+    </script>
+  </body>
+</html>

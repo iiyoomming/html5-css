@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* html{font-size: 10px;} */
+      :root {
+        font-size: 10px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .gggs {
+        width: 100%;
+        max-width: 1800px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        gap: 24px;
+        padding: 0 30px;
+        box-sizing: border-box;
+      }
+      .gggs div {
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .gggs div::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .gggs div:first-child:after {
+        display: none;
+      }
+
+      .gggs img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        transition: 0.4s linear;
+      }
+      .gggs div:hover img {
+        transform: scale(1.5);
+      }
+      .pro {
+        position: relative;
+        width: calc((25% - 1.8rem) * 2);
+      }
+
+      .pro h1 {
+        font-size: 60px;
+      }
+      .pro p {
+        font-size: 20px;
+      }
+      .phd {
+        position: relative;
+        width: calc(25% - 1.8rem);
+      }
+      .phd h2,
+      .pro h2 {
+        position: absolute;
+        color: #fff;
+        z-index: 1;
+        left: 20px;
+        bottom: 20px;
+        font-size: 22px;
+      }
+      @media screen and (max-width: 1300px) {
+        .pro h1 {
+          font-size: 57px;
+        }
+        .pro p {
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        .gggs div {
+          width: calc(50% - 1.2rem);
+          height: 240px;
+        }
+        .phd h2,
+        .pro h2 {
+          font-size: 18px;
+        }
+        .gggs div:first-child {
+          width: 100%;
+        }
+        .gggs div:nth-child(5) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gggs">
+      <div class="pro">
+        <h1>PROGRAM</h1>
+        <p>
+          KAIST GGGS에서는 녹색성장과 지속가능성 문제해결을 위해 <br />
+          탄소중립기후기술 및 정책·금융에 대한 통섭적인 이해를 갖춘 <br />
+          국가 핵심인재를 양성합니다.
+        </p>
+      </div>
+      <div class="phd">
+        <img
+          src="	https://gggs.kaist.ac.kr/html/images/main/sec03_tab01.png"
+          alt=""
+        />
+        <h2>박사과정↗</h2>
+      </div>
+      <div class="phd">
+        <img
+          src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab02.png"
+          alt=""
+        />
+        <h2>군학 프로그램↗</h2>
+      </div>
+      <div class="pro">
+        <img
+          src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab03.png"
+          alt=""
+        />
+        <h2>석사과정↗</h2>
+      </div>
+      <div class="phd">
+        <img
+          src="	https://gggs.kaist.ac.kr/html/images/main/sec03_thumb.png"
+          alt=""
+        />
+      </div>
+      <div class="phd">
+        <img
+          src="https://gggs.kaist.ac.kr/html/images/main/sec03_tab04.png"
+          alt=""
+        />
+        <h2>외국인 전형↗</h2>
+      </div>
+    </div>
+  </body>
+</html>

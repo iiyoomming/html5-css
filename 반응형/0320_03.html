@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 기본 스타일 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .cheon {
+        width: 100%;
+        max-width: 1721px;
+        margin: 0 auto;
+        padding: 48px 96px;
+      }
+      .txt {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 23px 0 37px 0;
+      }
+      .txt h1 {
+        font-size: 64px;
+        font-weight: normal;
+      }
+      .txt p {
+        font-size: 22px;
+      }
+      .box {
+        width: 100%;
+        padding-top: 50%;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url(https://www.cheongrium.com/static/images/spaceinfo/main_space_1.jpg)
+            center/cover;
+
+        border-radius: 16px;
+        position: relative;
+      }
+      .box .text {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        bottom: 68px;
+        left: 63px;
+        gap: 20px;
+        position: absolute;
+      }
+      .box .text1 {
+        font-size: 30px;
+        font-weight: normal;
+      }
+      .box .text2 {
+        font-size: 18px;
+      }
+      .box .text3 {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .cheon {
+          padding: 21px 18px;
+        }
+        .txt {
+          text-align: center;
+        }
+        .txt h1 {
+          font-size: 38px;
+        }
+        .txt p {
+          font-size: 18px;
+        }
+        .box .text1 {
+          font-size: 28px;
+        }
+        .box .text2,
+        .box .text3 {
+          font-size: 16px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .cheon {
+          padding: 15px;
+        }
+        .txt h1 {
+          font-size: 24px;
+        }
+        .txt p {
+          font-size: 14px;
+        }
+        .box .text {
+          left: 30px;
+          bottom: 40px;
+        }
+        .box .text1 {
+          font-size: 20px;
+        }
+        .box .text2,
+        .box .text3 {
+          font-size: 14px;
+        }
+        .box {
+          height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cheon">
+      <div class="txt">
+        <h1>공간안내</h1>
+        <p>
+          고즈넉한 자연 속 사계절의 아름다운 정취가 있는 청리움의 공간을
+          안내합니다
+        </p>
+      </div>
+      <a href="#">가이드맵</a>
+      <div class="box">
+        <div class="text">
+          <p class="text1">강당동 (컨퍼런스홀 | 세미나 A·B)</p>
+          <p class="text2">
+            천혜의 자연 속 프라이빗한 단독 공간으로<br />
+            교육, 세미나, 연수, 행사 등<br />
+            다채로운 이벤트를 지원합니다.
+          </p>
+          <p class="text3">VIEW MORE</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

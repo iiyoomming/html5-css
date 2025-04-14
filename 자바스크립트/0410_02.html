@@ -1,0 +1,239 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      }
+      .visual {
+        position: relative;
+        height: 100vh;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .txt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        width: 100%;
+      }
+      .txt > div {
+        position: absolute;
+        width: 100%;
+      }
+      .txt > div h1 {
+        font-size: 80px;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+      }
+      .txt > div h1.active {
+        opacity: 0;
+        filter: blur(50px);
+        transition: 1s;
+      }
+      .txt > div h1.on {
+        opacity: 1;
+        filter: blur(0);
+      }
+      .slidePage {
+        position: absolute;
+        left: 50%;
+        bottom: 70px;
+        transform: translateX(-50%);
+        z-index: 20;
+        display: flex;
+        gap: 20px;
+      }
+      .slidePage > div {
+        width: 140px;
+        /* position: relative; */
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+      }
+      .slidePage > div.on {
+        color: rgba(255, 255, 255, 1);
+      }
+      .slidePage .title {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .slidePage .btn {
+        display: block;
+        height: 2px;
+        width: 100%;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+      .slidePage .btn .btn_bar {
+        display: block;
+        width: 0;
+        height: 100%;
+        background: #fff;
+      }
+      .slidePage > div.on .btn .btn_bar {
+        animation: slide 3s forwards linear;
+      }
+      @keyframes slide {
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="visual">
+      <div
+        class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+      >
+        <div
+          class="swiper-wrapper"
+          id="swiper-wrapper-4defeee59dd3e98d"
+          aria-live="off"
+          style="
+            transition-duration: 1000ms;
+            transform: translate3d(-1920px, 0px, 0px);
+          "
+        >
+          <div
+            class="swiper-slide swiper-slide-prev"
+            role="group"
+            aria-label="1 / 3"
+            data-swiper-slide-index="0"
+            style="width: 1920px"
+          >
+            <img
+              src="https://www.yuhancare.com/data/yuhancare/inc/img_new/main/visual_1.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide swiper-slide-active"
+            role="group"
+            aria-label="2 / 3"
+            data-swiper-slide-index="1"
+            style="width: 1920px"
+          >
+            <img
+              src="https://www.yuhancare.com/data/yuhancare/inc/img_new/main/visual_2.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide swiper-slide-next"
+            role="group"
+            aria-label="3 / 3"
+            data-swiper-slide-index="2"
+            style="width: 1920px"
+          >
+            <img
+              src="https://www.yuhancare.com/data/yuhancare/inc/img_new/main/visual_3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="txt">
+          <div><h1 class="active">세상에 없던 원료</h1></div>
+          <div><h1 class="active on">세상을 위한 제품</h1></div>
+          <div><h1 class="active">세상을 바꾸는 기술</h1></div>
+        </div>
+        <div class="slidePage">
+          <div class="">
+            <p>
+              <span class="title">01. Ingredient</span>
+              <span class="btn"><span class="btn_bar"></span></span>
+            </p>
+          </div>
+          <div class="on">
+            <p>
+              <span class="title">02. Product</span>
+              <span class="btn"><span class="btn_bar"></span></span>
+            </p>
+          </div>
+          <div>
+            <p>
+              <span class="title">03. Technology</span>
+              <span class="btn"><span class="btn_bar"></span></span>
+            </p>
+          </div>
+        </div>
+        <span
+          class="swiper-notification"
+          aria-live="assertive"
+          aria-atomic="true"
+        ></span>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      let page = document.querySelectorAll(".slidePage > div");
+      let txt = document.querySelectorAll(".txt > div");
+      txt[0].querySelector("h1").classList.add("on", "active");
+      function myfnc() {
+        page.forEach(function (v, k) {
+          v.classList.remove("on");
+        });
+        txt.forEach(function (v, k) {
+          v.querySelector("h1").classList.remove("on");
+        });
+      }
+      var swiper = new Swiper(".mySwiper", {
+        speed: 1000,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        on: {
+          slideChange: function () {
+            myfnc();
+            page[this.realIndex].classList.add("on");
+            txt[this.realIndex].querySelector("h1").classList.add("on");
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .armo {
+        width: 1210px;
+        margin: 0 auto;
+      }
+      .armo h1 {
+        font-weight: 700;
+        color: #d1a050;
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+      .armo h2 {
+        width: 100%;
+        font-weight: 700;
+        color: #d1a050;
+        font-size: 42px;
+        margin: 40px 0 20px;
+        position: relative;
+      }
+      .armo h2::after {
+        width: 100%;
+        content: "";
+        border-bottom: 1.5px solid #d1a050;
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+      }
+      .inner h3 {
+        font-weight: normal;
+        font-size: 24px;
+        color: #d1a050;
+        cursor: pointer;
+        padding: 20px 15px;
+        position: relative;
+      }
+      .inner h3::after {
+        width: 100%;
+        content: "";
+        border-bottom: 1.5px solid #d1a050;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+      }
+      .inner .three h3::after {
+        opacity: 0;
+      }
+      .inner p {
+        padding: 60px 30px 40px;
+        text-align: center;
+        box-sizing: border-box;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="armo">
+      <h1>RETAIL</h1>
+      <h2>Slices - Oat Base</h2>
+      <div class="inner">
+        <div class="one">
+          <h3>AMERICAN</h3>
+          <p>
+            <img
+              src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-OATBASE-AMERICAN-pc.jpg"
+              alt="American"
+            />
+          </p>
+        </div>
+        <div class="two">
+          <h3>CHEDDAR</h3>
+          <p>
+            <img
+              src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-OATBASE-CHEDDAR-pc.jpg"
+              alt="Cheddar"
+            />
+          </p>
+        </div>
+        <div class="three">
+          <h3>PEPPERJACK</h3>
+          <p>
+            <img
+              src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-OATBASE-PEPPERJACK-pc.jpg"
+              alt="Pepperjack"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".inner h3").forEach(function (item) {
+        item.addEventListener("click", function () {
+          const currentParagraph = this.nextElementSibling;
+
+          if (
+            currentParagraph.style.display === "none" ||
+            currentParagraph.style.display === ""
+          ) {
+            currentParagraph.style.display = "block";
+          } else {
+            currentParagraph.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

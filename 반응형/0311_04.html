@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .wrap {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .wrap h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+      .wrap ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 35px 0;
+      }
+      .wrap ul li {
+        width: 100%;
+        max-width: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 45px 0;
+        flex: 1 0 40%;
+      }
+
+      .wrap ul li:nth-child(1),
+      .wrap ul li:nth-child(2),
+      .wrap ul li:nth-child(3) {
+        border-bottom: 3px solid #333;
+      }
+      .wrap ul li p:first-child {
+        font-size: 22px;
+      }
+      .wrap ul li p:last-child {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      @media screen and (max-width: 1208px) {
+        .wrap ul li {
+          width: 95%;
+        }
+        .wrap ul li {
+          border-bottom: 3px solid #333;
+        }
+      }
+      @media screen and (max-width: 840px) {
+        .wrap ul li p:first-child {
+          font-size: 17.6px;
+        }
+        .wrap ul li p:last-child {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .wrap ul li {
+          flex: 1 0 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>삼성중공업 주식회사</h1>
+      <ul>
+        <li>
+          <p>대표이사</p>
+          <p>최성안</p>
+        </li>
+        <li>
+          <p>창립일</p>
+          <p>1974년 8월 5일</p>
+        </li>
+        <li>
+          <p>종업원수</p>
+          <p>9,640명</p>
+        </li>
+        <li>
+          <p>자본금</p>
+          <p>8,801억원</p>
+        </li>
+        <li>
+          <p>매출액</p>
+          <p>79,072억원</p>
+        </li>
+        <li>
+          <p>총자산</p>
+          <p>158,920억원</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
